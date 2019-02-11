@@ -1,29 +1,53 @@
-<?php echo "Hello word!"; ?>
-
 <!DOCTYPE html>
+<html lang="pt">
 
-    <head></head>
+    <head> 
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ID=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="follow">
+
+        <title> Titulo da pagina </title>
+
+        <base href="/" />
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    </head>
 
     <body>
+        <div class="uk-section uk-container">
+            <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
+                <form class="uk-form-stacked js-login">
 
+                    <fieldset class="uk-fieldset">
 
-    <script>
-        if(typeof(Storage) !=="undefined") {
-            alert('Acept');
-        }
-        else {
-            alert('No can');
-        }
-    </script>
+                        <legend class="uk-legend">Email</legend>
 
-    <script>
-        localStorage.Myname = "matheus a. b. c.";
-    </script>
+                        <div class="uk-margin">
+                            <input class="uk-input" type="email" required='required' placeholder="Email@email.com">
+                        </div>
 
-    <script>
-        alert(localStorage.Myname);
-    </script>
+                        <legend class="uk-legend">Senha</legend>
 
+                        <div class="uk-margin">
+                            <input class="uk-input" type="password" required='required' placeholder="Sua Senha">
+                        </div>
+
+                        <div class="uk-margin">
+                            <button class="uk-button uk-button-default" type="submit">Login</button>
+                        </div>
+
+                        
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    
     </body>
-
-</html>
+    

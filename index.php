@@ -1,3 +1,12 @@
+<?php 
+
+    // permite o config
+    define('__CONFIG__', true);
+    //exige o config  
+    require_once "inc/config.php"; 
+    
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -17,37 +26,19 @@
 
     <body>
         <div class="uk-section uk-container">
-            <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-                <form class="uk-form-stacked js-login">
+        <?php 
+  
+        echo "Hello world " ;
+        echo date ("Y m d");
+        ?>
 
-                    <fieldset class="uk-fieldset">
-
-                        <legend class="uk-legend">Email</legend>
-
-                        <div class="uk-margin">
-                            <input class="uk-input" type="email" required='required' placeholder="Email@email.com">
-                        </div>
-
-                        <legend class="uk-legend">Senha</legend>
-
-                        <div class="uk-margin">
-                            <input class="uk-input" type="password" required='required' placeholder="Sua Senha">
-                        </div>
-
-                        <div class="uk-margin">
-                            <button class="uk-button uk-button-default" type="submit">Login</button>
-                        </div>
-
-                        
-                    </fieldset>
-                </form>
-            </div>
+        <p> 
+            <a href="curso/login.php">Login </a>
+            <a href="curso/register.php">Cadastro </a>
 
         </div>
 
-        <!-- UIkit JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+        <?php require_once "inc/footer.php"; ?>
     
     </body>
     
